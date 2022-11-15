@@ -56,7 +56,7 @@ function initializeServiceWorker() {
       else{
         console.log('failed, not active');
       }
-    );
+    });
   }
   // B2. TODO - Listen for the 'load' event on the window object.
   // Steps B3-B6 will be *inside* the event listener's function created in B2
