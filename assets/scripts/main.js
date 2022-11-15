@@ -84,7 +84,7 @@ async function getRecipes() {
   return new Promise((resolve, reject) => {
       for(let i = 0; i < RECIPE_URLS.length; i++){
       try{
-        let recipeURL = await fetch(RECIPE.URLS[i]);
+        let recipeURL = await fetch(RECIPE_URLS[i]);
         let recipeURL2 = await recipeURL.json();
         holdRecipes.push(recipeURL2);
         if(i === RECIPE_URLS.length - 1){
