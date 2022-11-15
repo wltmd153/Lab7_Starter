@@ -44,7 +44,7 @@ self.addEventListener('fetch', function (event) {
   // B8. TODO - If the request is in the cache, return with the cached version.
   //            Otherwise fetch the resource, add it to the cache, and return
   //            network response.
-   event.respondWith(caches.open(cacheName).then((cache) => {
+   event.respondWith(caches.open(CACHE_NAME).then((cache) => {
       // Respond with the image from the cache or from the network
       return cache.match(event.request).then((cachedResponse) => {
         return cachedResponse || fetch(event.request.url).then((fetchedResponse) => {
