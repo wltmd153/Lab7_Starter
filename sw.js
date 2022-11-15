@@ -56,4 +56,5 @@ self.addEventListener('fetch', function (event) {
           // Return the network response
           return fetchedResponse;
         });
+  });
 });
